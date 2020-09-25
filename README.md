@@ -11,3 +11,9 @@ The project included 5 phases:
 5. Alpha Virtual Machine
 
 Testfiles Included
+
+#### Contributors:
+
+- Antoniou Panagiwtis
+- Mavrikis Christos
+- Karathanasis Dimitris
