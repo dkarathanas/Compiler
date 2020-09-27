@@ -1,0 +1,55 @@
+inputs = 0;
+
+while(inputs <= 0)
+{
+	print("How many inputs?\n");
+	inputs = input();
+}
+
+table = [];
+
+function filltable(t,n)
+{
+	for(i=0;i<n;i++)
+	{
+		print("Enter value..\n");
+		t[i] = input();
+	}
+}
+
+function printtable(t)
+{
+	size = objecttotalmembers(t);
+
+	print("Printtable size = ",size,"\n");
+	for(i=0;i<size;i++)
+		print(t[i],"\n");
+}
+
+function bubblesort(t)
+{
+	size = objecttotalmembers(t);
+
+	for(i=0;i<size-1;i++)
+	{
+		for(j = 0; j < size-1; j++)
+		{
+			if(t[j] < t[j+1])
+			{
+				tmp = t[j+1];
+				t[j+1] = t[j];
+				t[j] = tmp;
+			}
+		}
+	}
+}
+
+filltable(table,inputs);
+print("\nPrinting table\n");
+printtable(table);
+
+print("Total members = ",objecttotalmembers(table),"\n");
+
+bubblesort(table);
+print("\nPrinting sorted table\n");
+printtable(table);

@@ -1,0 +1,10 @@
+while(x-y > z-w){
+while(x-y > z-w){
+	if(b){
+		break;
+	}else{
+		a=x-z;
+	} 
+break;
+}
+

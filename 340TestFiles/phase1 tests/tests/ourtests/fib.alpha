@@ -1,0 +1,13 @@
+function fibonacci(i)
+{
+	if(i == 0 or i == 1)
+		return i;
+	else {
+		return fibonacci(i-1) + fibonacci(i-2);
+	}
+}
+
+for(i=0;i<20;)
+{
+	print("Fibonacci of ",i," = ",fibonacci(i++),"\n");
+}

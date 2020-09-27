@@ -1,0 +1,24 @@
+a = [ { "a1" : [0,1,2,3,4] },
+	{ "a2" : (function () {})},
+	{ "a3" : "somestring"},
+	{ "a4" : ["abc","def",(function () {})]},
+	{ "a5" : nil},
+	{ "a6" : nil}
+	];
+
+b = [ { "b1" : a},
+	{ "b2" : a},
+	{ "b3" : a.a1},
+	{ "b4" : nil}
+	];
+
+a.a5 = a;
+a.a6 = b;
+b.b4 = b;
+a.a7 = a.a5;
+a.a8 = b.b4.b4;
+
+print("Printing table a\n");
+print(a,"\n");
+print("Printing table b\n");
+print(b,"\n");

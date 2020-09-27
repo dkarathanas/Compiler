@@ -1,0 +1,25 @@
+a;
+function f(x){ //scope 1
+    local y;
+   while(x){    //scope 2
+       a;
+       function g(x){ //scope 3
+           x = 4;
+           local t = a;
+           while(a){ //scope 4
+               local b;
+               y=1;
+               while(v){}
+                break;
+              function h(b){//scope 5
+                   local foo;
+                   b = 2;
+                   return b;
+               }
+           }
+           return x;
+       }
+   }
+   return x;
+}
+break;

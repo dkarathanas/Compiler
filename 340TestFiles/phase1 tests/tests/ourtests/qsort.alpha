@@ -1,0 +1,78 @@
+function swap(array,i,j)
+{
+	tmp = array[i];
+	array[i] = array[j];
+	array[j] = tmp;
+}
+
+function partition(array,left,right)
+{
+	pivotIndex = left;
+	pivotValue = array[pivotIndex];
+	index = left;
+
+	swap(array,pivotIndex,right);
+
+	for(i=left;i<right;i++)
+	{
+		if(array[i] < pivotValue)
+		{
+			swap(array,i,index);
+			index++;
+		}
+	}
+	swap(array,right,index);
+
+	return index;
+}
+
+function quicksort(array, left, right)
+{
+	if(left >= right)
+		return;
+
+	index = partition(array,left,right);
+	quicksort(array,left,index-1);
+	quicksort(array,index+1,right);
+}	
+
+inputs = 0;
+
+while(inputs <= 0)
+{
+        print("How many inputs?\n");
+        inputs = input();
+}
+
+table = [];
+
+function filltable(t,n)
+{
+        for(i=0;i<n;i++)
+        {
+                print("Enter value..\n");
+                t[i] = input();
+        }
+}
+
+function printtable(t)
+{
+        size = objecttotalmembers(t);
+
+        print("Printtable size = ",size,"\n");
+        for(i=0;i<size;i++)
+                print(t[i],"\n");
+}
+
+filltable(table,inputs);
+print("\nPrinting table\n");
+printtable(table);
+
+print("Total members = ",objecttotalmembers(table),"\n");
+
+quicksort(table,0,inputs-1);
+print("\nPrinting sorted table\n");
+printtable(table);
+
+
+

@@ -1,0 +1,29 @@
+[0]	assign  	'otan    '	NULL    	a       	0       
+[1]	assign  	a       	NULL    	_t0     	1       
+[2]	assign  	'kura    '	NULL    	b       	2       
+[3]	assign  	b       	NULL    	_t0     	3       
+[4]	funcstart	NULL    	NULL    	g       	4       
+[5]	param   	NULL    	NULL    	11.000000	5       
+[6]	call    	NULL    	NULL    	cos     	5       
+[7]	getretval	NULL    	NULL    	_t0     	5       
+[8]	ret     	NULL    	NULL    	_t0     	8       
+[9]	funcend 	NULL    	NULL    	g       	9       
+[10]	assign  	mou     	NULL    	c       	10      
+[11]	assign  	c       	NULL    	_t1     	11      
+[12]	param   	NULL    	NULL    	6.000000	12      
+[13]	param   	NULL    	NULL    	6.000000	12      
+[14]	call    	NULL    	NULL    	g       	12      
+[15]	getretval	NULL    	NULL    	_t0     	12      
+[16]	mul     	6.000000	_t0     	_t0     	16      
+[17]	assign  	_t0     	NULL    	d       	17      
+[18]	assign  	d       	NULL    	_t0     	18      
+[19]	param   	NULL    	NULL    	'pazari  '	19      
+[20]	param   	NULL    	NULL    	sto     	19      
+[21]	param   	NULL    	NULL    	paw     	19      
+[22]	param   	NULL    	NULL    	tha     	19      
+[23]	call    	NULL    	NULL    	print   	19      
+[24]	getretval	NULL    	NULL    	_t0     	19      
+[25]	funcstart	NULL    	NULL    	tha_sou_agorasw	25      
+[26]	mul     	1.000000	koko    	_t0     	26      
+[27]	ret     	NULL    	NULL    	_t0     	27      
+[28]	funcend 	NULL    	NULL    	tha_sou_agorasw	28      

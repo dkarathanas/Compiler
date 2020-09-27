@@ -1,0 +1,11 @@
+[0]	funcstart	NULL    	NULL    	_f1     	0       
+[1]	add     	a       	NULL    	b       	_t0     	1       
+[2]	ret     	NULL    	NULL    	_t0     	2       
+[3]	funcend 	NULL    	NULL    	_f1     	3       
+[4]	assign  	_f1     	NULL    	NULL    	x       	4       
+[5]	assign  	x       	NULL    	NULL    	_t1     	5       
+[6]	funcstart	NULL    	NULL    	_f2     	6       
+[7]	funcend 	NULL    	NULL    	_f2     	7       
+[8]	param   	NULL    	NULL    	'nil     '	8       
+[9]	call    	NULL    	NULL    	_f2     	8       
+[10]	getretval	NULL    	NULL    	_t2     	8       

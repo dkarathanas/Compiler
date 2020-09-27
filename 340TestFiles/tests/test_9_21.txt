@@ -1,0 +1,7 @@
+x = 10.12;
+y = "hello";
+z = (function(){return x; });
+function g(a,b){return z(a,b); }
+print(x,y,z);
+t = [];
+t.x = y;
