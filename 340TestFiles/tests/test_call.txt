@@ -1,0 +1,3 @@
+x = f(y)(a,b);
+
+sprite..move(dx,dy);

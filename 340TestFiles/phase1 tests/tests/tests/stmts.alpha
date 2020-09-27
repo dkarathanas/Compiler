@@ -1,0 +1,36 @@
+x = 12;
+///--- simple test for tables
+print("***** TABLES *****\n");
+
+array = [0, 1, 2, 3, 4, 5];
+t = [ {"foo":27}, {"bender":1394}, {"bar": [1,2,3]},
+	  {"()":(function (self, new_foo){self.foo = new_foo;})} ];
+
+print("******************\n");
+
+///--- for statement
+print("***** TESTING FUNCS *****\n");
+
+t.bar.x = [];
+
+t.bar.x.y = [];
+
+t.bar.x.y["z"] = 5;
+
+print(t.bar.x.y["z"]);
+
+/*
+(function mul(x, y) { print(x*y); }) (6,7);
+
+t.foo = mul;
+t.foo(6, 7, "error?");
+
+t( (function identity(x) { return x; }) );
+print(t.foo(72));
+
+t(42);
+print(t.foo);
+
+print("*************************");
+
+*/

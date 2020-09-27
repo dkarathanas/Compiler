@@ -1,0 +1,11 @@
+a = (x+y) - (z*w);
+
+a = x>= y;
+
+b = f() >= g();
+
+a = x || y && z;
+
+function f(){};
+
+a = (t = []) || f && print;

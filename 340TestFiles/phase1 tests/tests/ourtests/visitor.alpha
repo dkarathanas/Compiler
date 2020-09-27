@@ -1,0 +1,143 @@
+
+function Book(title) {
+    return [
+		{ "title" : title },
+		{ "sections" : [] },
+
+		{ "AppendSection" :
+			(function(book, section) {
+				book.sections[objecttotalmembers(book.sections)] = section;
+			})
+		},
+
+        { "Accept" :
+        	(function(book, visitor) {
+        		visitor.VisitBook(book);
+
+        		for (i=0; i < objecttotalmembers(book.sections); ++i)
+        			book.sections[i].Accept(book.sections[i], visitor);
+        	})
+        },
+	{ "()" :
+		(function(book) {
+			print(book.title,"\n");
+			return book;
+		})
+	}	
+    ];
+}
+
+function Section(title) {
+    return [
+        { "title" : title },
+        { "paragraphs" : [] },
+
+		{ "AppendParagraph" :
+			(function(section, paragraph) {
+				section.paragraphs[objecttotalmembers(section.paragraphs)]
+					= paragraph;
+			})
+		},
+
+        { "Accept" :
+        	(function(section, visitor) {
+        		visitor.VisitSection(section);
+
+        		for (i=0; i < objecttotalmembers(section.paragraphs); ++i)
+        			section.paragraphs[i].Accept(section.paragraphs[i], visitor);
+        	})
+        }
+    ];
+}
+
+function Paragraph(text) {
+    return [
+        { "content" : text },
+
+        { "Accept" :
+        	(function(paragraph, visitor) {
+        		visitor.VisitParagraph(paragraph);
+        	})
+        }
+    ];
+}
+
+numbooks = 0;
+
+while(numbooks <=0 )
+{
+	print("How many books?\n");
+	numbooks = input();
+}
+
+books = [];
+
+for(i=0;i<numbooks;i++)
+{
+	print("Title : ");
+	books[i] = Book(input());
+}
+
+print("Total books = ",objecttotalmembers(books),"\n");
+
+sections = 0;
+
+while(sections<=0)
+{
+	print("How many sections to add?\n");
+	sections = input();
+}
+
+for(i=0;i<sections;i++) 
+{
+	print("Which book? Name of section?\n");
+	books[input()]..AppendSection(Section(input()));
+}
+
+paragraphs = 0;
+
+while(paragraphs <= 0)
+{
+	print("How many paragraphs to add?\n");
+	paragraphs = input();
+}
+
+for(i=0;i<paragraphs;i++)
+{
+	print("Which book? Which section? Name of paragraph?\n");
+	books[input()].sections[input()]..AppendParagraph(Paragraph(input()));
+}
+
+function PrintVisitor() {
+	return [
+		{ "VisitBook" :
+			(function(book) {
+				print("Book Title: ", book.title, "\n");
+			})
+		},
+		{ "VisitSection" :
+			(function(section) {
+				print("\tSection :", section.title, "\n");
+			})
+		},
+		{ "VisitParagraph" :
+			(function(paragraph) {
+				print("\t\t", paragraph.content, "\n");
+			})
+		}
+	];
+}
+
+for(i=0;i<objecttotalmembers(books);i++)
+{
+	print("Book = ",i," Title = ",books[i].title,"\n");
+	for(j=0;j<objecttotalmembers(books[i].sections);j++)
+	{
+		print("Section = ",j," Title = ",books[i].sections[j].title,"\n");
+		for(k=0;k<objecttotalmembers(books[i].sections[j].paragraphs);k++)
+		{
+			print("Paragraph = ",k," Content = ",books[i].sections[j].paragraphs[k].content,"\n");
+		}
+	}
+}
+

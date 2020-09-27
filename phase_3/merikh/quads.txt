@@ -1,0 +1,10 @@
+[0]	if_less 	a       	NULL    	b       	NULL    	6       
+[1]	jump    	NULL    	NULL    	NULL    	2       
+[2]	if_less 	c       	NULL    	d       	NULL    	4       
+[3]	jump    	NULL    	NULL    	NULL    	8       
+[4]	if_less 	e       	NULL    	f       	NULL    	6       
+[5]	jump    	NULL    	NULL    	NULL    	8       
+[6]	assign  	NULL    	T       	_t5     	6       
+[7]	jump    	NULL    	NULL    	NULL    	9       
+[8]	assign  	NULL    	F       	_t5     	8       
+[9]	assign  	_t5     	NULL    	NULL    	x       	9       

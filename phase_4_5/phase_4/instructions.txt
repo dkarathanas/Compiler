@@ -1,0 +1,33 @@
+[0]	assign         otan          NULL          Global: 0             Line:1       
+[1]	assign         Global: 0             NULL          Global: 1             Line:1       
+[2]	assign         kura          NULL          Global: 2             Line:2       
+[3]	assign         Global: 2             NULL          Global: 1             Line:2       
+[4]	jump           g             NULL          	goto: 12            Line:3       
+[5]	funcstart      NULL          NULL          g             Line:3       
+[6]	param          11.000000     NULL          NULL          Line:3       
+[7]	call           cos           retval        NULL          NULL          Line:3       
+[8]	assign         retval        NULL          Local: 0             Line:3       
+[9]	assign         Local: 0             NULL          retval        Line:3       
+[10]	jump           NULL          NULL          	goto: 11            Line:3       
+[11]	funcend        NULL          NULL          g             Line:3       
+[12]	assign         Global: 5             NULL          Global: 4             Line:4       
+[13]	assign         Global: 4             NULL          Global: 6             Line:4       
+[14]	param          6.000000      NULL          NULL          Line:5       
+[15]	param          6.000000      NULL          NULL          Line:5       
+[16]	call           g             NULL          NULL          Line:5       
+[17]	assign         retval        NULL          Global: 1             Line:5       
+[18]	mul            6.000000      Global: 1             Global: 1             Line:5       
+[19]	assign         Global: 1             NULL          Global: 7             Line:5       
+[20]	assign         Global: 7             NULL          Global: 1             Line:5       
+[21]	param          pazari        NULL          NULL          Line:6       
+[22]	param          Global: 10            NULL          NULL          Line:6       
+[23]	param          Global: 9             NULL          NULL          Line:6       
+[24]	param          Global: 8             NULL          NULL          Line:6       
+[25]	call           print         retval        NULL          NULL          Line:6       
+[26]	assign         retval        NULL          Global: 1             Line:6       
+[27]	jump           tha_sou_agoraswNULL          	goto: 33            Line:7       
+[28]	funcstart      goto: 0             goto: 0             tha_sou_agoraswLine:7       
+[29]	mul            1.000000      Local: 0             Local: 0             Line:7       
+[30]	assign         Local: 0             goto: 0             retval        Line:7       
+[31]	jump           goto: 0             goto: 0             	goto: 32            Line:7       
+[32]	funcend        goto: 0             goto: 0             tha_sou_agoraswLine:7       

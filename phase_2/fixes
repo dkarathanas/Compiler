@@ -1,0 +1,4 @@
+clear argument list after function      (fixed?)
+Tree test file seg fault   (not any more)
+na 3anakanoume insert ta arguments twn functions (FIXED-check test2.out)
+error sto grammar (fixed -> allagh kanonwn sto objdef, line 283 sto parser.y)

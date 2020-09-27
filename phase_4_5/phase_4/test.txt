@@ -1,0 +1,7 @@
+a = "otan";
+b = "kura";
+function g(x, y){return cos(11);}
+c = mou;
+d = 6*g(6, 6);
+print(tha , paw , sto, "pazari");
+function tha_sou_agorasw(){return 1*local koko;} 

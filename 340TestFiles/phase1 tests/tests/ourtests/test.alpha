@@ -1,0 +1,7 @@
+for(i=0;i<5;i++)
+	print(i,"\n");
+
+function test()
+{
+	a = 1;
+}

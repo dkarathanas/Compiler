@@ -1,0 +1,7 @@
+x = t.a.b.c ;
+
+t.a.b = x; 
+
+x = q.a = y;
+
+x = p [a+b] ;

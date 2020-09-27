@@ -1,0 +1,29 @@
+function test()
+{
+	x = [{ "test":nil},
+	{"()" : (function(t) {return t;})},
+	{"value":15},
+	{"f" : (function(t) { return t;})}];
+
+	x.test = x;
+
+	return x;
+}
+
+t = test();
+
+val = t.test.test.test()()()()().f(t).f(t).f(t.test.test).f(t.f(t).test()).value;
+print(val,"\n");
+
+val = t["value"];
+print(val,"\n");
+
+val = t.test.value;
+print(val,"\n");
+
+val = t().value;
+print(val,"\n");
+
+val = t..f().value;
+print(val,"\n");
+

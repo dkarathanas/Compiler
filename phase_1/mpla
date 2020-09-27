@@ -1,0 +1,14 @@
+Starting up for the project's A'Phase  ....
+
+-------------------------- LEXICAL ANALYZER --------------------------  
+
+
+[32m 
+ 
+ LINE :    1      | TOKEN    0        |            aaaaaaaaaAAA                        |      STRING                         |   STRING                    
+[32m[0m[32m 
+ 
+ LINE :    2      | TOKEN    1        |                                                |      EOF                            |   EOF                       
+[32m[0m
+-------------------------- LEXICAL ANALYZER -------------------------- 
+Completed A'Phase  at 23:03:19  on  Feb 27 2018 !!!
